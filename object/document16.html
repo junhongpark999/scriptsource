@@ -21,7 +21,7 @@
         <input type="number" name="age" id="age" />
       </div>
       <div>
-        <button type="submit" onclick="checkForm">전송</button>
+        <button type="submit" onclick="checkForm()">전송</button>
         <button type="reset">취소</button>
       </div>
     </form>
@@ -30,9 +30,9 @@
         //태그가 가지고 있는 기본 동작 제어
         event.preventDefault();
 
-        //사용자의 입력값 가져오기
+        //사용자의 입력 요소 가져오기
         let name = document.querySelector("#name");
-        // console.log(name);
+        //console.log(name);
         let age = document.querySelector("#age");
         let password = document.querySelector("#password");
 

@@ -11,13 +11,13 @@
       //소문자로 영문 이름과 전화번호를 입력받은 후
       //이름은 대문자로 바꿔서 출력하기
       //전화번호는 010-1234-1234 => 010-####-1234 출력
-      let username = prompt("이름을 입력해.");
-      let usertel = prompt("좋아, 다음은 전화번호를 입력해.");
+      let name = prompt("소문자로 영문 이름 입력 ");
+      let usertel = prompt("전화번호 입력(형식은 000-0000-0000) ");
 
-      document.write("이름 : ", input.toLocaleUpperCase(), "<br>");
+      document.write("이름 : ", name.toUpperCase() + "<br>");
       document.write(
         "전화번호 : ",
-        input2.replace(usertel.substring(4, 8), "####"),
+        usertel.replace(usertel.substring(4, 8), "####"),
         "<br>"
       );
     </script>

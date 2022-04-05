@@ -9,12 +9,14 @@
   <body>
     <h1 id="header" onclick="change()">Header 1</h1>
     <script>
-      // h1 태그의 style 적용
-      let h1 = document.querySelector("#header");
+      function change() {
+        //h1 태그의 style 적용
+        let h1 = document.querySelector("#header");
 
-      h1.style.color = "blue";
-      h1.style.border = "1px solid red";
-      h1.style.padding = "10px";
+        h1.style.color = "blue";
+        h1.style.border = "1px solid red";
+        h1.style.padding = "10px";
+      }
     </script>
   </body>
 </html>

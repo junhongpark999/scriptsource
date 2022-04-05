@@ -12,7 +12,7 @@
       <a href="#" onclick="get()">div 요소 내용 출력하기</a>
     </p>
     <p>
-      <a href="#" onclick="set(변경되었습니다)">div 요소 내용 변경하기</a>
+      <a href="#" onclick="set('변경되었습니다')">div 요소 내용 변경하기</a>
     </p>
     <script>
       let div = document.querySelector("#ex");
@@ -22,7 +22,7 @@
         alert(div.innerHTML);
       }
       function set(value) {
-        //div 영역안에 있는 내용을 valoue 로 변경시키기
+        //div 영역안에 있는 내용을 value 로 변경시키기
         div.innerHTML = value;
       }
     </script>

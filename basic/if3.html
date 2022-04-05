@@ -8,7 +8,7 @@
   </head>
   <body>
     <script>
-      // 사용자에게 국어,영어,수학점수를 입력받아 평균 구하기
+      //사용자에게 국어,영어,수학점수를 입력받아 평균 구하기
       let math = parseInt(prompt("수학점수"));
       let eng = Number(prompt("영어점수"));
       let kor = Number(prompt("국어점수"));
@@ -16,14 +16,14 @@
       let average = (math + eng + kor) / 3;
       alert(average);
 
-      // 평균이 90 이상이면 A, 80이상이면 B, 70이상이면 C ,나머지는 D
-      // if~else if ~else
+      //평균이 90 이상이면 A, 80이상이면 B, 70이상이면 C, 나머지는 D
+      //if~else if ~else
       if (average >= 90) {
         alert("A");
       } else if (average >= 80) {
         alert("B");
       } else if (average >= 70) {
-        alert("c");
+        alert("C");
       } else {
         alert("D");
       }

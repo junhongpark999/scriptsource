@@ -9,17 +9,17 @@
   <body>
     <div>
       <label for="">이름</label>
-      <input type="text" name="name" id="name" onchange="lower2()" />
+      <input type="text" name="name" id="name" onchange="lower()" />
     </div>
     <div>
       <label for="">나이</label>
-      <input type="text" name="age" id="age" onblur="lower()" />
+      <input type="text" name="age" id="age" onblur="lower2()" />
     </div>
     <script>
       // onchange() : 내용 변경후 포커스 이동
       // onblur() : 포커스만 이동되면 무조건 호출
       function lower() {
-        //  alert("onchane()");
+        // alert("onchane()");
         // name 대문자 => name 소문자
         let name = document.querySelector("#name");
         name.value = name.value.toLowerCase();
